@@ -1,5 +1,272 @@
-2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 19232 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
-2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.753 seconds (JVM running for 1.216)
-2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 6748 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.951 seconds (JVM running for 1.361)
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 14:47:12 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-19 14:47:12 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 14:47:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2021-07-19 14:47:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
+2021-07-19 14:47:23 [Twitter Stream consumer /  [1][Waiting for 10000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-19 14:47:24 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2021-07-19 14:47:24 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 20000 milliseconds
+2021-07-19 19:13:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 2112 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:13:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:13:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.821 seconds (JVM running for 1.261)
+2021-07-19 19:13:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:13:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:13:07 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:13:07 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:13:07 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Expected literal value at character 116 of {"created_at":"Mon Jul 19 19:13:07 TRT 2021","id":"4141862695630921009","text":"ipsum","user":"3375171117947190551",}
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Expected literal value at character 116 of {"created_at":"Mon Jul 19 19:13:07 TRT 2021","id":"4141862695630921009","text":"ipsum","user":"3375171117947190551",}
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readLiteral(JSONTokener.java:317)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:141)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:395)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 6 common frames omitted
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 24024 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.683 seconds (JVM running for 1.034)
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:20:09 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:20:09 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Expected literal value at character 116 of {"created_at":"Mon Jul 19 19:20:09 TRT 2021","id":"2716564263224485811","text":"Lorem","user":"2497484032567428455",}
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Expected literal value at character 116 of {"created_at":"Mon Jul 19 19:20:09 TRT 2021","id":"2716564263224485811","text":"Lorem","user":"2497484032567428455",}
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readLiteral(JSONTokener.java:317)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:141)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:395)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 6 common frames omitted
+2021-07-19 19:20:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 19540 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:20:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:20:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.818 seconds (JVM running for 1.649)
+2021-07-19 19:20:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:20:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:20:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:20:47 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:22:21 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Expected literal value at character 116 of {"created_at":"Mon Jul 19 19:21:13 TRT 2021","id":"5748717251644233746","text":"Lorem","user":"2271367265679314244",}
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Expected literal value at character 116 of {"created_at":"Mon Jul 19 19:21:13 TRT 2021","id":"5748717251644233746","text":"Lorem","user":"2271367265679314244",}
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readLiteral(JSONTokener.java:317)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:141)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:395)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 7 common frames omitted
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 12888 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.798 seconds (JVM running for 1.254)
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:22:34 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:23:40 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Expected literal value at character 114 of {"created_at":"Mon Jul 19 19:22:46 TRT 2021","id":"2678042657430462856","text":"sit","user":"6361102825737469932",}
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:57)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Expected literal value at character 114 of {"created_at":"Mon Jul 19 19:22:46 TRT 2021","id":"2678042657430462856","text":"sit","user":"6361102825737469932",}
+	at twitter4j.JSONTokener.syntaxError(JSONTokener.java:486)
+	at twitter4j.JSONTokener.readLiteral(JSONTokener.java:317)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:141)
+	at twitter4j.JSONTokener.readObject(JSONTokener.java:395)
+	at twitter4j.JSONTokener.nextValue(JSONTokener.java:130)
+	at twitter4j.JSONObject.<init>(JSONObject.java:167)
+	at twitter4j.JSONObject.<init>(JSONObject.java:184)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	... 7 common frames omitted
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 13776 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.677 seconds (JVM running for 1.01)
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:23:47 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:23:48 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Value 2084124467237853172 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Value 2084124467237853172 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:100)
+	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
+	... 8 common frames omitted
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 8164 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.8 seconds (JVM running for 1.249)
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:24:16 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:24:48 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Value 1906697211745080770 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Value 1906697211745080770 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:100)
+	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
+	... 9 common frames omitted
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 23932 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.761 seconds (JVM running for 1.133)
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:24:51 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:24:51 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Value 8828345309584613969 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Value 8828345309584613969 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:100)
+	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
+	... 8 common frames omitted
+2021-07-19 19:25:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 3056 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:25:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:25:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.668 seconds (JVM running for 1.003)
+2021-07-19 19:25:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:25:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:25:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:25:42 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:25:42 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Value 72877405 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Value 72877405 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:100)
+	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
+	... 8 common frames omitted
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 4960 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.654 seconds (JVM running for 0.989)
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:25:56 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:25:56 [pool-1-thread-1] ERROR c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter status
+twitter4j.TwitterException: Value 2903977272025278658 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
+	at com.microservices.demo.twitter.to.kafka.services.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: twitter4j.JSONException: Value 2903977272025278658 at user of type java.lang.String cannot be converted to JSONObject
+	at twitter4j.JSON.typeMismatch(JSON.java:100)
+	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
+	... 8 common frames omitted
+2021-07-19 19:28:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 8420 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 19:28:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 19:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.663 seconds (JVM running for 1.023)
+2021-07-19 19:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 19:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 19:28:37 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 19:28:37 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with next ipsum
+2021-07-19 19:28:47 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with next amet
+2021-07-19 19:28:57 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with next sit
+2021-07-19 23:10:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 12044 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-19 23:10:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-19 23:10:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.824 seconds (JVM running for 1.262)
+2021-07-19 23:10:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-19 23:10:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 23:10:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Umut Hoş Geldin
+2021-07-19 23:10:36 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-19 23:10:36 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with next dolor
+2021-07-19 23:10:46 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with next ipsum

@@ -1,0 +1,5 @@
+2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 14.0.2 on DESKTOP-9S07BP5 with PID 19232 (C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo\twitter-to-kafka-service\target\classes started by Umut in C:\Users\Umut\Documents\GitHub\trendyol-bootcamp\microservices-demo)
+2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.753 seconds (JVM running for 1.216)
+2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-07-13 11:35:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
